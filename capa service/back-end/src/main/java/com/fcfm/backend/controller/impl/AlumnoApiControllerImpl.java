@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 public class AlumnoApiControllerImpl implements AlumnoApiController {
 
-    private AlumnoService alumnoService;
+    private final AlumnoService alumnoService;
 
     @Autowired
     AlumnoApiControllerImpl(AlumnoService alumnoService) {
